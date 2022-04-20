@@ -11,7 +11,7 @@ public class MarkdownParse {
         ArrayList<String> toReturn = new ArrayList<>();
         // find the next [, then find the ], then find the (, then read link upto next )
         int currentIndex = 0;
-        String[] sub = markdown.split("\n");
+        // String[] sub = markdown.split("\n");
         while(currentIndex < markdown.length()) {
             String subString = markdown.substring(currentIndex, markdown.length()-1);
             if (subString.contains("[") 

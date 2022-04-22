@@ -16,14 +16,16 @@ public class MarkdownParse {
             if (subString.contains("[") 
                 && subString.contains("]")
                 && subString.contains("(") 
-                && subString.contains(")")
-                && !subString.contains(" ")){
+                && subString.contains(")")){
                     int openBracket = markdown.indexOf("[", currentIndex);
                     int closeBracket = markdown.indexOf("]", openBracket);
                     int openParen = markdown.indexOf("(", closeBracket);
                     int closeParen = markdown.indexOf(")", openParen);
                     toReturn.add(markdown.substring(openParen + 1, closeParen));
                     currentIndex = closeParen + 1;  
+            }
+            else{
+                break;
             }
         }
         return toReturn;

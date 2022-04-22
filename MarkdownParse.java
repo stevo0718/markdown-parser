@@ -14,7 +14,10 @@ public class MarkdownParse {
         String subString = markdown.substring(currentIndex, markdown.length()-1);
         while(currentIndex < markdown.length()) {
             if (subString.contains("[") 
-                && subString.contains("]")){
+                && subString.contains("]")
+                && subString.contains("(") 
+                && subString.contains(")")
+                && !subString.contains(" ")){
                     int openBracket = markdown.indexOf("[", currentIndex);
                     int closeBracket = markdown.indexOf("]", openBracket);
                     int openParen = markdown.indexOf("(", closeBracket);

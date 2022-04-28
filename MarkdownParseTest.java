@@ -15,16 +15,16 @@ public class MarkdownParseTest {
    @Test
    public void test() {
     List<String> list = List.of("ilovemoney");
-    Path fileName = Path.of("test-file3.md");
+    Path fileName = Path.of("test-file4.md");
     String content = "";
+    ArrayList<String> links = null;
     try{
         content = Files.readString(fileName);
-        
+        links = MarkdownParse.getLinks(content);
     }
     catch(IOException e){
 
     }
-    ArrayList<String> links = MarkdownParse.getLinks(content);
     assertEquals(list, links);
    }
 }

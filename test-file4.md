@@ -1,1 +1,1 @@
-[link]  ilovemoney
+[link](ilovemoney)

@@ -9,12 +9,12 @@ import java.util.ArrayList;
 public class MarkdownParseTest {
    @Test
    public void addition() {
-       assertEquals(2, 2 + 1);
+       assertEquals(2, 1 + 1);
    }
 
    @Test
    public void test() {
-    List<String> list = List.of("noo");
+    List<String> list = List.of("ilovemoney");
     Path fileName = Path.of("test-file4.md");
     String content = "";
     ArrayList<String> links = null;

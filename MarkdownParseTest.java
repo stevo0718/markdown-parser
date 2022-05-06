@@ -25,7 +25,7 @@ public class MarkdownParseTest {
     catch(IOException e){
 
     }
-    assertEquals(list, links);
+    assertEquals(null, links);
    }
 }
     

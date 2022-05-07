@@ -13,6 +13,7 @@ public class MarkdownParse {
         int currentIndex = 0;
         String subString = markdown.substring(currentIndex, markdown.length() - 1);
         //System.out.println(subString);
+        //test
         while(currentIndex < markdown.length()) {
             //System.out.println(subString);
             if (subString.contains("[") 

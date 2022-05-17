@@ -23,7 +23,7 @@ public class MarkdownParseTest extends MarkdownParse{
 
     //Lab report 4 tests
     @Test
-    public void test9() throws IOException{
+    public void test6() throws IOException{
         Path fileName = Path.of("test-file6.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);
@@ -35,7 +35,7 @@ public class MarkdownParseTest extends MarkdownParse{
     }
 
     @Test
-    public void test10() throws IOException{
+    public void test7() throws IOException{
         Path fileName = Path.of("test-file7.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);
@@ -47,7 +47,7 @@ public class MarkdownParseTest extends MarkdownParse{
     }
 
     @Test
-    public void test11() throws IOException{
+    public void test8() throws IOException{
         Path fileName = Path.of("test-file8.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);

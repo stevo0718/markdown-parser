@@ -55,5 +55,14 @@ public class MarkdownParseTest extends MarkdownParse{
         expected.add("https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule");
         assertEquals(expected, links);
     }
+
+    @Test
+    public void test9() throws IOException{
+        Path fileName = Path.of("test-file3.md");
+        String content = Files.readString(fileName);
+        ArrayList<String> links = getLinks(content);
+        ArrayList<String> expected = new ArrayList<String>();
+        assertEquals(expected, links);
+    }
 }
     
